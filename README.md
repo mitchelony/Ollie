@@ -1,14 +1,16 @@
 # Ollie – A Financial Assistant for Students & First-Time Earners 💸
 
-Ollie is an AI-friendly financial assistant built to help students and first-time earners build sustainable financial habits. It’s a **personal project** with real-world ambitions — evolving from a learning tool into a fully-fledged web app for mobile and desktop users.
+Ollie is an AI-friendly financial assistant built to help students and first-time earners build sustainable financial habits.
+It’s a **personal project** with real-world ambitions — evolving from a learning tool into a fully-fledged web app for mobile and desktop users.
 
 Currently in active development using **FastAPI**, **SQLite**, and **modular Python**, Ollie will later integrate AI-powered budgeting insights, visual dashboards, and mobile deployment.
 
 
 
-##📌 Why I’m Building This
+## 📌 Why I’m Building This
 
-I’m a student and aspiring AI engineer who wanted to build something useful, technically challenging, and user-focused. Ollie started as a learning project, but I’m committed to making it real — for people like me who didn’t grow up with financial literacy or the right tools.
+I’m a **student** and aspiring AI engineer who wants to build something useful, technically challenging, and user-focused. 
+Ollie started as a learning project, but I’m committed to making it real for people like me who didn’t grow up with financial literacy or the right tools.
 
 If you’re reading this, thanks for following along 🧠💼
 
