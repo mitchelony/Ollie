@@ -77,12 +77,12 @@ ollie/
 
 ---
 
-##🤝 Contributing
+## 🤝 Contributing
 
 This is a solo dev project for now, but I’m always open to ideas, feedback, and collabs — especially from designers, finance nerds, and fellow devs.
 
 ---
 
-##📄 License
+## 📄 License
 
 MIT License – free for personal and educational use.
