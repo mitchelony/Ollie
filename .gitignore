@@ -205,3 +205,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Virtual environments
+venv/
+
+# Local development environment
+.vscode/
+
+# Github Workflows
+.github/
+
+# Local database files
+ollie.db
