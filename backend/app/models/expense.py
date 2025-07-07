@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Float, Boolean, Date
-from .db import Base
+from app.db import Base
 
 # Define the Expense model:
 class Expense(Base):
@@ -11,4 +11,5 @@ class Expense(Base):
     date = Column(Date, nullable = False)
     description = Column(String)
     payment_method = Column(String)
-    
+    merchant = Column(String)
+    is_recurring = Column(Boolean, default = False)
