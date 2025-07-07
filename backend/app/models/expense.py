@@ -3,6 +3,7 @@ from app.db import Base
 
 # Define the Expense model:
 class Expense(Base):
+    '''Expense model for tracking expenses'''
     __tablename__ = "expenses"
     
     id = Column(Integer, primary_key = True, index = True)
