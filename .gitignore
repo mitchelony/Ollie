@@ -219,4 +219,4 @@ venv/
 ollie.db
 
 # macOS specific files
-.DS_Store
+.DS_Store/
