@@ -1,2 +1,2 @@
-from models.expense import Expense
-from models.user import User
+from app.models.expense import Expense
+from app.models.user import User

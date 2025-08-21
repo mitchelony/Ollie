@@ -119,6 +119,8 @@ def create_expense(
 # GET Route
 @router.get("/", response_model=List[ExpenseOut])
 def get_all_expenses(
+    response: Response,
+    db_session: Session = Depends(get_db),
     category: Optional[str] = None,
     categories: Optional[List[str]] = Query(None, description="Repeat param to filter by multiple categories"),
     min_amount: Optional[float] = Query(None, ge=0),
@@ -136,8 +138,6 @@ def get_all_expenses(
     sort_dir: str = Query("desc", description="asc or desc"),
     limit: int = Query(50, ge=1, le=200),
     offset: int = Query(0, ge=0),
-    db_session: Session = Depends(get_db),
-    response: Optional[Response] = None,
 ):
     # Validate ranges
     if min_amount is not None and max_amount is not None and min_amount > max_amount:
@@ -165,8 +165,7 @@ def get_all_expenses(
 
     # Total count before pagination
     total = query.count()
-    if response is not None:
-        response.headers["X-Total-Count"] = str(total)
+    response.headers["X-Total-Count"] = str(total)
 
     # Sorting with stable tie-breaker by id
     sortable = {
