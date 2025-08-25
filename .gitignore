@@ -219,4 +219,10 @@ venv/
 ollie.db
 
 # macOS specific files
+<<<<<<< HEAD
 .DS_Store
+=======
+.DS_Store
+.DS_Store
+.DS_Store
+>>>>>>> wip/save-local
