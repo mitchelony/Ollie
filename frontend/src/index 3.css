@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* optional tiny reset */
+:root {
+  color-scheme: light;
+}
