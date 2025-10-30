@@ -1,11 +1,13 @@
+*.DS_Store
+
 # Python
 __pycache__/
 *.py[cod]
 *.egg-info/
 .eggs/
-*.sqlite3
-.env
 .venv/
+.env
+*.sqlite3
 
 # Node
 node_modules/
