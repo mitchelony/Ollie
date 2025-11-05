@@ -1,18 +1,41 @@
 import { useMemo } from "react";
 import { Doughnut } from "react-chartjs-2";
-
 import {
   Chart as ChartJS,
   ArcElement,
   Tooltip,
   Legend,
 } from "chart.js";
-
 import { spendMock } from "../data/mockSpend";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default function DemoChart() {
+  // Brand colors: adjust to your palette (from tailwind.config or Coolors)
+  const COLORS = [
+    "#402D8B", // indigo
+    "#0AEBFF", // blue
+    "#040404", // black (used sparingly)
+    "#EBEBEB", // gray
+    "#9CA3AF", // neutral gray (Tailwind gray-400-ish)
+  ];
+
+  // Prepare data memoized so we don't rebuild on every render
+  const data = useMemo(() => {
+    const { labels, values } = spendMock;
+    return {
+      labels,
+      datasets: [
+        {
+          data: values,
+          backgroundColor: COLORS.slice(0, values.length),
+          borderWidth: 0,
+          hoverOffset: 6,
+        },
+      ],
+    };
+  }, []);
+
   const options = {
     responsive: true,
     maintainAspectRatio: false,
