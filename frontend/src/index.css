@@ -1,6 +1,15 @@
 @import "tailwindcss";
 
 /* optional tiny reset */
-:root {
-  color-scheme: light;
+:root { color-scheme: light; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-[fadeIn_1s_forwards] {
+  animation: fadeIn 1s ease-out forwards;
 }

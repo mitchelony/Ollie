@@ -1,3 +1,4 @@
+import DemoChart from "./components/DemoChart";
 import Hero from "./components/Hero";
 
 export default function App() {
@@ -31,10 +32,13 @@ export default function App() {
           <h2 className="text-2xl md:text-3xl font-semibold">Features</h2>
           <p className="mt-2 text-gray-600">We’ll wire this next.</p>
         </section>
-
+        
         <section id="demo" className="mx-auto max-w-6xl px-4 py-16 bg-gray-50">
-          <h2 className="text-2xl md:text-3xl font-semibold">Demo</h2>
-          <p className="mt-2 text-gray-600">Chart is coming in the next task.</p>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-6">Demo</h2>
+          <p className="text-gray-600 mb-6">
+            Here’s a peek at how Ollie helps you visualize spending.
+          </p>
+          <DemoChart />
         </section>
 
         <section id="roadmap" className="mx-auto max-w-6xl px-4 py-16">
